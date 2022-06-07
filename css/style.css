@@ -1,0 +1,346 @@
+@font-face {
+  font-family: Druk Wide;
+  font-display: swap;
+  src: url("../fonts/Druk Wide Bold.woff") format("woff"), url("../fonts/Druk Wide Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Druk Cyr;
+  font-display: swap;
+  src: url("../fonts/DrukCyr-Bold.woff") format("woff"), url("../fonts/Druk Wide Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: SF Pro Display;
+  font-display: swap;
+  src: url("../fonts/SF-Pro-Display-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: SF Pro Display;
+  font-display: swap;
+  src: url("../fonts/SF-Pro-Display-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: SF Pro Display;
+  font-display: swap;
+  src: url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: SF Pro Display;
+  font-display: swap;
+  src: url("../fonts/SF-Pro-Display-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+* {
+  scroll-behavior: smooth;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-family: SF Pro Display;
+  color: #242628;
+  background-color: #ffffff;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: SF Pro Display;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.wrapper {
+  display: flex;
+  background-color: #fff;
+}
+
+.aside {
+  flex: 0 0 269px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #d2d2d2;
+}
+.aside__header {
+  padding: 70px 0 70px;
+}
+.aside img.aside__title {
+  display: block;
+  margin: 0 auto 70px;
+}
+.aside__body {
+  flex: 1 0 auto;
+  padding: 0 0 80px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aside__links li {
+  padding: 20px 20px 20px 45px;
+  margin-bottom: 20px;
+}
+.aside__links li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #838385;
+}
+.aside__links li.active a {
+  color: #01aaad;
+}
+.aside__orders {
+  color: #838385;
+  background: url("../img/orders.svg") left no-repeat;
+}
+.aside .aside__journal {
+  background: url("../img/journal.svg") left no-repeat;
+}
+.aside .aside__journal span {
+  display: inline-block;
+  padding: 3px 8px;
+  margin-left: 20px;
+  color: #fff;
+  background: #f36c35;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.aside__profile {
+  background: url("../img/person.svg") left no-repeat;
+}
+.aside__chat {
+  background: url("../img/chat.svg") left no-repeat;
+  margin-top: 100px;
+}
+.aside__exit {
+  background: url("../img/exit.svg") left no-repeat;
+  margin-top: 180px;
+}
+.aside__exit, .aside__chat {
+  display: block;
+  padding: 18px 20px 18px 46px;
+  color: #838385;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.person {
+  text-align: center;
+}
+.person__icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  margin: 0 auto 20px;
+}
+.person__name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.person__position {
+  font-weight: 500;
+  color: #8383;
+}
+
+.main {
+  background: #fefefe;
+}
+.main__body {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.section {
+  flex: 0 1 31%;
+  background: #fefefe;
+  box-shadow: 0px 3px 10px rgba(135, 135, 135, 0.15);
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+.section__header {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.section__name {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.408px;
+  font-weight: 500;
+  padding: 11px 20px;
+  background-color: #f6f6f6;
+  border-radius: 30px;
+}
+.section__name_b {
+  color: #007aff;
+}
+.section__name_o {
+  color: #f36c35;
+}
+.section__name_g {
+  color: #34c759;
+}
+.section__amout {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 100px;
+  color: #fff;
+  margin-left: 20px;
+}
+.section__amout_b {
+  background-color: #007aff;
+}
+.section__amout_o {
+  background-color: #f36c35;
+}
+.section__amout_g {
+  background-color: #34c759;
+}
+
+.block {
+  margin-bottom: 35px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.block__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.block__number {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.408px;
+  color: #242628;
+}
+.block__type {
+  padding: 5px 15px;
+  background: #01aaad;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.408px;
+}
+.block__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.408px;
+  color: #242628;
+  margin-bottom: 5px;
+}
+.block__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.408px;
+  color: #838385;
+}
+.block__date-time {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.block__date-time p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.408px;
+  color: #242628;
+  margin-right: 5px;
+}
